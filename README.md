@@ -1,1 +1,3 @@
-haha ok
+mobile app 
+Android Studio
+Java
