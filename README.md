@@ -1,3 +1,1 @@
-mobile app 
-Android Studio
-Java
+Mobile app - Android Studio - Java
