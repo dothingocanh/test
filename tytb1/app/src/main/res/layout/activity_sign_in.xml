@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/sign"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignInActivity">
+    <TextView
+
+        android:id="@+id/textView3"
+        android:layout_width="309dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="56dp"
+        android:textColor="@color/white"
+        android:text="Sign in"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+
+    <EditText
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/text_box"
+        android:textSize="20sp"
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:textColorHint="@color/white"
+        android:layout_marginTop="40dp"
+        android:hint="Email"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:layout_editor_absoluteX="16dp">
+
+    </EditText>
+
+    <EditText
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="12dp"
+        android:background="@drawable/text_box"
+        android:textSize="20sp"
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:textColorHint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        android:hint="Password">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_signup"
+        android:paddingLeft="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="116dp"
+        android:onClick="goToSignUpAct"
+        android:paddingTop="20dp"
+        android:textColor="@color/teal_700"
+        android:text="SIGN UP?"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+       >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/sign_in_btn"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="12dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="SIGN IN"
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
